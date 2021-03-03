@@ -12,8 +12,8 @@
             <Link to="/characters">
                 <h2>Characters</h2>
             </Link>
-            <Link to="/monsters">
-                <h2>Monsters</h2>
+            <Link to="/gameinfo">
+                <h2>Game Info</h2>
             </Link>
         </div>
     </nav>

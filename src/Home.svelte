@@ -4,8 +4,7 @@
 
 
 <main>
-    <Navbar />
-    <h1>Hello FFXII Fans!</h1>
+    <h1><Navbar />Hello FFXII Fans!</h1>
 	<p>Navigate the site via page links at the top! Kupo!</p>
 </main>
 

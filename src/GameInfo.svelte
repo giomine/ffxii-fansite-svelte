@@ -15,35 +15,39 @@
         const container = document.createElement('div')
         container.setAttribute('class', 'container')
 
-        fetch('https://www.moogleapi.com/api/v1/characters/search?origin=xii')
+        fetch('https://www.moogleapi.com/api/v1/games/8e801e49-4f82-4899-39a4-08d6b0a627a3')
         .then(res => res.json())
         .then(data => {
-            data.forEach((char) => {
-            console.log(char.pictures[0].url + " Name: " + char.name + ", Origin: " + char.origin + ", About: " + char.description)  
+            data.forEach((ff12) => {
+            console.log(ff12.picture + " Name: " + ff12.title + ", Platform: " + ff12.platform + ", Release Date: " + ff12.releaseDate + ", Description: " + ff12.description)  
 
             const card = document.createElement('div')
             card.setAttribute('class', 'card')
 
             const image = document.createElement('img');
-            image.src = char.pictures[0].url
+            image.src = ff12.picture
 
             const imageContainer = document.createElement('div')
             imageContainer.setAttribute('class', 'imageContainer')
 
-            const name = document.createElement('h2');
-            name.textContent = char.name;
+            const title = document.createElement('h2');
+            title.textContent = ff12.title;
 
-            const origin = document.createElement('p');
-            origin.textContent = char.origin;
+            const platform = document.createElement('p');
+            platform.textContent = ff12.platform;
+
+            const releaseDate = document.createElement('p');
+            releaseDate.textContent = ff12.releaseDate;
 
             const description = document.createElement('p');
-            description.textContent = char.description;
+            description.textContent = ff12.description;
 
             container.appendChild(card)
             card.appendChild(imageContainer)
             imageContainer.appendChild(image)
-            card.appendChild(name)
-            card.appendChild(origin)
+            card.appendChild(title)
+            card.appendChild(platform)
+            card.appendChild(releaseDate)
             card.appendChild(description)
         })
             app.appendChild(container)
@@ -56,7 +60,7 @@
 
 
 <main>
-    <h1><Navbar /> FFXII Characters</h1>
+    <h1><Navbar /> FFXII Info</h1>
     <div id="root"></div>  
 </main>
 

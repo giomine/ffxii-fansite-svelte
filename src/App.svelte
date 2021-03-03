@@ -2,7 +2,7 @@
 	import { Router, Route } from "svelte-navigator"
 	import Home from "./Home.svelte"
 	import Characters from "./Characters.svelte"
-	import Monsters from "./Monsters.svelte"
+	import GameInfo from "./GameInfo.svelte"
 </script>
 
 
@@ -14,8 +14,8 @@
 		<Route path="/characters">
 			<Characters />
 		</Route>
-		<Route path="/monsters">
-			<Monsters />
+		<Route path="/gameinfo">
+			<GameInfo />
 		</Route>		
 	</main>
 </Router>
@@ -23,8 +23,6 @@
 <style>
 	main {
 		text-align: center;
-		padding: 1em;
-		max-width: 240px;
 		margin: 0 auto;
 	}
 
