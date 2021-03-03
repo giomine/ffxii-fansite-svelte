@@ -42,6 +42,7 @@
 
             const description = document.createElement('p');
             description.textContent = ff12.description;
+            description.setAttribute('class', 'gameDescription')
 
             container.appendChild(card)
             card.appendChild(imageContainer)

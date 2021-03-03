@@ -9,5 +9,7 @@
 </main>
 
 <style>
-
+    p{
+        margin: 0 auto;
+    }
 </style>

@@ -57,4 +57,9 @@
     @media (max-width: 450px) {
             .nav-container { width: 100%; }
     }
+
+    @media (max-width: 350px) {
+            .nav-container { width: 100%; }
+            h2 { font-size: 14px }
+    }
 </style>
