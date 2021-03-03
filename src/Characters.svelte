@@ -26,6 +26,7 @@
 
             const image = document.createElement('img');
             image.src = char.pictures[0].url
+            image.setAttribute('class', 'charImages')
 
             const imageContainer = document.createElement('div')
             imageContainer.setAttribute('class', 'imageContainer')

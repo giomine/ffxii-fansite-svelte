@@ -22,13 +22,14 @@
             console.log(ff12.picture + " Name: " + ff12.title + ", Platform: " + ff12.platform + ", Release Date: " + ff12.releaseDate + ", Description: " + ff12.description)  
 
             const card = document.createElement('div')
-            card.setAttribute('class', 'card')
+            card.setAttribute('class', 'card gameCard')
 
             const image = document.createElement('img');
             image.src = ff12.picture
+            image.setAttribute('class', 'gameImage')
 
             const imageContainer = document.createElement('div')
-            imageContainer.setAttribute('class', 'imageContainer')
+            imageContainer.setAttribute('class', 'gameImageContainer')
 
             const title = document.createElement('h2');
             title.textContent = ff12.title;
@@ -37,7 +38,7 @@
             platform.textContent = ff12.platform;
 
             const releaseDate = document.createElement('p');
-            releaseDate.textContent = ff12.releaseDate;
+            releaseDate.textContent = "Release Date: " + ff12.releaseDate;
 
             const description = document.createElement('p');
             description.textContent = ff12.description;
@@ -65,5 +66,5 @@
 </main>
 
 <style>
-
+    
 </style>
