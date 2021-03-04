@@ -109,8 +109,8 @@
 
 .imageContainer{
   height: 300px;
-  display: flex;
-  align-items: center;
+  /* display: flex;         display:flex and align-items:center prevented overflow:scroll from working in Safari. also turns out these two lines made no difference anyway.
+  align-items: center; */
 }
 
 .charImages{
