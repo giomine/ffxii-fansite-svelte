@@ -3,6 +3,7 @@
 	import Home from "./Home.svelte"
 	import Characters from "./Characters.svelte"
 	import GameInfo from "./GameInfo.svelte"
+	import Footer from "./Footer.svelte"
 </script>
 
 
@@ -16,7 +17,8 @@
 		</Route>
 		<Route path="/gameinfo">
 			<GameInfo />
-		</Route>		
+		</Route>
+		<Footer />		
 	</main>
 </Router>
 
