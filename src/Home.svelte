@@ -14,7 +14,7 @@
 
 <style>
     main{
-        height: 85vh;
+        height: 100vh;
         background: #F6F6F6;
         background-image: url(/images/final-fantasy-xii-key-art.jpg);
         background-position: center;
@@ -30,7 +30,7 @@
     .prologue{
         width: 50%;
         margin: 0 auto;
-        padding: 100px;
+        padding: 60px 100px;
         line-height: 1.2;
         color: rgb(0, 0, 0);
         background: rgba(255, 255, 255, 0.8);
