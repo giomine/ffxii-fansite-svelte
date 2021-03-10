@@ -1,5 +1,4 @@
 <script>
-    import Navbar from "./Navbar.svelte"
 
         // ------------ this timeOut is only a temp solution ------------vv
         setTimeout(function(){                  
@@ -62,10 +61,13 @@
 
 
 <main>
-    <h1><Navbar /> FFXII Info</h1>
     <div id="root"></div>  
 </main>
 
 <style>
-    
+    main{
+        display: flex;
+        align-items: center;
+        height: 950px;
+    }
 </style>

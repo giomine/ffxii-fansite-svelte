@@ -1,5 +1,4 @@
 <script>
-    import Navbar from "./Navbar.svelte"
 
         // ------------ this timeOut is only a temp solution ------------vv
         setTimeout(function(){                  
@@ -36,9 +35,11 @@
 
             const origin = document.createElement('p');
             origin.textContent = char.origin;
+            origin.setAttribute('class', 'cardText');
 
             const description = document.createElement('p');
             description.textContent = char.description;
+            description.setAttribute('class', 'cardText');
 
             container.appendChild(card)
             card.appendChild(imageContainer)
@@ -57,10 +58,13 @@
 
 
 <main>
-    <h1><Navbar /> FFXII Characters</h1>
     <div id="root"></div>  
 </main>
 
 <style>
-    
+    main{
+        display: flex;
+        align-items: center;
+        height: 3240px;
+    }
 </style>
