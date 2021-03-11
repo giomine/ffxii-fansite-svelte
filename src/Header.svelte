@@ -66,6 +66,7 @@
 
     .nav-container {
         width: 100%;
+		z-index: 1;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -80,6 +81,8 @@
 
 	.login-container{
 		display: flex;
+		z-index: 2;
+        position: relative;
 	}
 	.flags{
 		width: 50px;
