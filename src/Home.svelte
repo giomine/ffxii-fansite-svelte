@@ -1,9 +1,11 @@
 <script>
-
+    import Header from "./Header.svelte"
 </script>
 
 
 <main>
+    <Header />
+    
     <div class="prologue-container">
         <p class="prologue">This is the story of a world called Ivalice. Two years after the war in which the kingdom of Dalmasca was destroyed by the 
             invasion of the mighty military nation, the Arcadia Empire I longed for the freedom to run in the sky. The only surviving 

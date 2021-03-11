@@ -4,6 +4,9 @@
 	export let login = "LOG IN";
 	export let loginBarJP = false;
 	export let squareEnixJP = "http://square-enix-games.com";
+	export let HomeJP = "Home"
+	export let CharJP = "Characters"
+	export let GameJP = "Game Info"
 </script>
 
 <main>
@@ -12,13 +15,13 @@
         <nav class="nav-container">
             <div class="navs">
                 <Link to="/">
-                    <h2>Home</h2>
+                    <h2>{ HomeJP }</h2>
                 </Link>
                 <Link to="/characters">
-                    <h2>Characters</h2>
+                    <h2>{ CharJP }</h2>
                 </Link>
                 <Link to="/gameinfo">
-                    <h2>Game Info</h2>
+                    <h2>{ GameJP }</h2>
                 </Link>
             </div>
         </nav>

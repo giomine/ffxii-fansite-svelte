@@ -3,7 +3,6 @@
 	import Home from "./Home.svelte"
 	import Characters from "./Characters.svelte"
 	import GameInfo from "./GameInfo.svelte"
-	import Header from "./Header.svelte"
 	import Footer from "./Footer.svelte"
 	import Jp from "./Jp.svelte"
 </script>
@@ -11,7 +10,6 @@
 
 <Router>
 	<main>
-		<Header />
 		<Route path="/">
 			<Home />
 		</Route>
@@ -22,6 +20,12 @@
 			<GameInfo />
 		</Route>
 		<Route path="jp">
+			<Jp />
+		</Route>
+		<Route path="characters/jp">
+			<Jp />
+		</Route>
+		<Route path="gameinfo/jp">
 			<Jp />
 		</Route>
 		<Route path="jp#loaded">

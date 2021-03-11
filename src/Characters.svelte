@@ -1,4 +1,5 @@
 <script>
+    import Header from "./Header.svelte"
 
         // ------------ this timeOut is only a temp solution ------------vv
         setTimeout(function(){                  
@@ -56,8 +57,9 @@
     }
 </script>
 
-
+<Header />
 <main>
+    
     <div id="root"></div>  
 </main>
 
