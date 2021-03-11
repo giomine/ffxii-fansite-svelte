@@ -2,9 +2,8 @@
     import Header from "./Header.svelte"
 </script>
 
-
+<Header />
 <main>
-    <Header />
     
     <div class="prologue-container">
         <p class="prologue">This is the story of a world called Ivalice. Two years after the war in which the kingdom of Dalmasca was destroyed by the 
@@ -21,6 +20,9 @@
         background-image: url(/images/final-fantasy-xii-key-art.jpg);
         background-position: center;
         background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .prologue-container{
@@ -36,6 +38,11 @@
         line-height: 1.2;
         color: rgb(0, 0, 0);
         background: rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 700px){
+        main { height: 660px; }
+        .prologue { width: 80%; padding: 20px 10px; }
     }
 
     @media (max-width: 480px){
