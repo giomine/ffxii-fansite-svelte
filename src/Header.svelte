@@ -74,13 +74,13 @@
         position: absolute;
         display: flex;
         justify-content: center;
-        align-items: center;
+		align-items: center;
     }
     
     .navs{
         width: 40%;
         display: flex;
-        justify-content: space-evenly;
+		justify-content: space-evenly;
     }
 
 	.login-container{
@@ -107,7 +107,7 @@
 		font-weight: bold;
 	}
 	.loginJP{
-		width: 115px;
+		width: 140px;
 		font-size: 0.9rem;
 		padding-left: 5px;
 	}
