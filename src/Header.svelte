@@ -61,7 +61,8 @@
 
 	.square-logo{
 		height: 20px;
-        padding: 15px 20px;
+		margin-top: 5px;
+		padding: 0 20px;
     }
 
     .nav-container {
