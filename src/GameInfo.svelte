@@ -70,5 +70,10 @@
         display: flex;
         align-items: center;
         height: 950px;
+        display: block;
+    }
+
+    @media (max-width: 480px){
+        main { height: 100%; }
     }
 </style>

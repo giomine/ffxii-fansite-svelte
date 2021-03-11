@@ -124,6 +124,10 @@
         .rating-logo { width: 170px; }
     }
 
+    @media (max-width: 480px){
+        main { height: 100%; }
+    }
+
     @media (max-width: 400px){
         img { width: 50px; }
         .rating-logo { width: 100px; }

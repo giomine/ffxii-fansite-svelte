@@ -68,5 +68,10 @@
         display: flex;
         align-items: center;
         height: 3240px;
+        display: block;
+    }
+
+    @media (max-width: 480px){
+        main { height: 100%; }
     }
 </style>

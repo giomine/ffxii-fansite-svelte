@@ -37,4 +37,9 @@
         color: rgb(0, 0, 0);
         background: rgba(255, 255, 255, 0.8);
     }
+
+    @media (max-width: 480px){
+        main { height: 660px; }
+        .prologue { width: 90%; padding: 20px 10px; }
+    }
 </style>
