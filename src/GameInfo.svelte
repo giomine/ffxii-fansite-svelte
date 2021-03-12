@@ -80,4 +80,8 @@
     @media (max-width: 480px){
         main { height: 100%; }
     }
+
+    @media (max-width: 400px){
+		main { margin-top: 55px; }
+	}
 </style>

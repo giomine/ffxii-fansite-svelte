@@ -49,4 +49,8 @@
         main { height: 660px; }
         .prologue { width: 90%; padding: 20px 10px; }
     }
+
+    @media (max-width: 400px){
+		main { margin-top: 55px; }
+	}
 </style>

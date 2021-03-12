@@ -115,7 +115,11 @@
 	}
 
 	@media (max-width: 400px){
-		.square-logo { width: 150px; padding: 15px 10px; }
+		.square-logo { width: 120px; padding: 0; margin: 10px 15px; }
+		.header { border-bottom: none; }
+		.nav-container { top: 45px; background: black; }
+		.navs { width: 100%; padding: 20px 0; }
+		.flags { margin-right: 45px; }
 		.triangle { height: 0; width: 0; }
 		.login { width: 120px; padding: 0; justify-content: space-evenly; }
 	}
