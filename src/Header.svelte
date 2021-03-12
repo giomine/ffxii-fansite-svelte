@@ -7,6 +7,7 @@
 	export let HomeJP = "Home"
 	export let CharJP = "Characters"
 	export let GameJP = "Game Info"
+	export let MovieJP = "Movie"
 </script>
 
 <main>
@@ -19,6 +20,9 @@
                 </Link>
                 <Link exact to="/characters">
                     <h2>{ CharJP }</h2>
+				</Link>
+				<Link exact to="/movie">
+                    <h2>{ MovieJP }</h2>
                 </Link>
                 <Link exact to="/gameinfo">
                     <h2>{ GameJP }</h2>

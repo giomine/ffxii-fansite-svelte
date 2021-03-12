@@ -14,6 +14,9 @@
                 <Link exact to="/characters/jp">
                     <h2>キャラクター</h2>
                 </Link>
+                <Link exact to="/movie/jp">
+                    <h2>ムービー</h2>
+                </Link>
                 <Link exact to="/gameinfo/jp">
                     <h2>ゲーム</h2>
                 </Link>
