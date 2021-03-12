@@ -5,6 +5,8 @@
 	import GameInfo from "./GameInfo.svelte"
 	import Footer from "./Footer.svelte"
 	import Jp from "./Jp.svelte"
+	import CharsJP from "./CharsJP.svelte"
+	import GameInfoJP from "./GameInfoJP.svelte";
 </script>
 
 
@@ -23,20 +25,12 @@
 			<Jp />
 		</Route>
 		<Route path="characters/jp">
-			<Jp />
+			<CharsJP />
 		</Route>
 		<Route path="gameinfo/jp">
-			<Jp />
+			<GameInfoJP />
 		</Route>
-		<Route path="jp#loaded">
-			<Jp />
-		</Route>
-		<Route path="jp/jp">
-			<Jp />
-		</Route>
-		<Route path="jp/jp/jp">
-			<Jp />
-		</Route>
+
 		<Footer />		
 	</main>
 </Router>

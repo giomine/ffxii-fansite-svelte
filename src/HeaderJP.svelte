@@ -1,12 +1,6 @@
 <script>
 	import { Link } from "svelte-navigator";
-	export let join = "JOIN";
-	export let login = "LOG IN";
-	export let loginBarJP = false;
-	export let squareEnixJP = "http://square-enix-games.com";
-	export let HomeJP = "Home"
-	export let CharJP = "Characters"
-	export let GameJP = "Game Info"
+	export let loginBarJP = true;
 </script>
 
 <main>
@@ -14,27 +8,27 @@
         <img class="square-logo" src="https://cdn.sqexeu.com/headerbar/images/SE_Logo_White.svg" alt="square enix logo">
         <nav class="nav-container">
             <div class="navs">
-                <Link exact to="/">
-                    <h2>{ HomeJP }</h2>
+                <Link exact to="/jp">
+                    <h2>ホーム</h2>
                 </Link>
-                <Link exact to="/characters">
-                    <h2>{ CharJP }</h2>
+                <Link exact to="/characters/jp">
+                    <h2>キャラクター</h2>
                 </Link>
-                <Link exact to="/gameinfo">
-                    <h2>{ GameJP }</h2>
+                <Link exact to="/gameinfo/jp">
+                    <h2>ゲーム</h2>
                 </Link>
             </div>
         </nav>
 		<div class="login-container">
 			<nav class="flags">
 				<Link to="/">🇬🇧</Link>
-				<Link to="jp">🇯🇵</Link>
+				<Link exact to="/jp">🇯🇵</Link>
 			</nav>
 			<div class="triangle">	
 			</div>
 			<div class="login" class:loginJP={loginBarJP}>
-				<a href="{squareEnixJP}" target="_blank" rel="noopener noreferrer"><p>{join}</p></a>
-				<a href="{squareEnixJP}" target="_blank" rel="noopener noreferrer"><p>{login}</p></a>
+				<a href="https://www.jp.square-enix.com" target="_blank" rel="noopener noreferrer"><p>新規登録</p></a>
+				<a href="https://www.jp.square-enix.com" target="_blank" rel="noopener noreferrer"><p>ログイン</p></a>
 			</div>
 		</div>	
 	</div>
