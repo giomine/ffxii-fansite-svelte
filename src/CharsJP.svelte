@@ -7,7 +7,7 @@
 <main>
     <HeaderJP />
     <div class="main-container">
-        <h2>日本のサイトはもうすぐです。</h2>
+        <h2>キャラクターはもうすぐです。</h2>
     </div>
 </main>
 
