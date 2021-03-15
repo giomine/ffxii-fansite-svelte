@@ -69,7 +69,7 @@
     main{
         display: flex;
         align-items: center;
-        height: 950px;
+        height: 100%;
         display: block;
     }
 
@@ -81,7 +81,7 @@
         main { height: 100%; }
     }
 
-    @media (max-width: 400px){
+    @media (max-width: 450px){
 		main { margin-top: 55px; }
 	}
 </style>

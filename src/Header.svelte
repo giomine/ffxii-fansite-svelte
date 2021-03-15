@@ -14,7 +14,7 @@
     <div class="header">
         <img class="square-logo" src="https://cdn.sqexeu.com/headerbar/images/SE_Logo_White.svg" alt="square enix logo">
         <nav class="nav-container">
-            <div class="navs">
+			<div class="navs">
                 <Link exact to="/">
                     <h2>{ HomeJP }</h2>
                 </Link>
@@ -26,7 +26,7 @@
                 </Link>
                 <Link exact to="/gameinfo">
                     <h2>{ GameJP }</h2>
-                </Link>
+				</Link>
             </div>
         </nav>
 		<div class="login-container">
@@ -121,13 +121,20 @@
 		 width: 50px;
 	}
 
-	@media (max-width: 400px){
-		.square-logo { width: 120px; padding: 0; margin: 10px 15px; }
-		.header { border-bottom: none; }
+	@media (max-width: 450px){
+		main { width: 100vw; }
+		.square-logo { width: 100px; padding: 0; margin: 10px 15px; }
+		.header { border-bottom: none; width: 100vw; }
 		.nav-container { top: 45px; background: black; }
-		.navs { width: 100%; padding: 20px 0; }
-		.flags { margin-right: 45px; }
+		.navs { width: 100vw; padding: 20px 0; }
 		.triangle { height: 0; width: 0; }
 		.login { width: 120px; padding: 0; justify-content: space-evenly; }
 	}
+
+	@media (max-width: 280px){
+		.flags { flex-direction: column; padding-top: 10px; justify-content: space-evenly; }
+		.login { width: 100%; height: 70px; padding-top: 10px; flex-direction: column; }
+		.navs { flex-direction: column; }
+		.navs h2 { padding: 5px 0;}
+    }
 </style>

@@ -114,12 +114,12 @@
 		 width: 50px;
 	}
 
-	@media (max-width: 400px){
-		.square-logo { width: 120px; padding: 0; margin: 10px 15px; }
-		.header { border-bottom: none; }
+	@media (max-width: 900px){
+		main { width: 100vw; }
+		.square-logo { width: 100px; padding: 0; margin: 10px 15px; }
+		.header { border-bottom: none; width: 100vw; }
 		.nav-container { top: 45px; background: black; }
-		.navs { width: 100%; padding: 20px 0; }
-		.flags { margin-right: 45px; }
+		.navs { width: 100vw; padding: 20px 0; }
 		.triangle { height: 0; width: 0; }
 		.login { width: 120px; padding: 0; justify-content: space-evenly; }
 	}

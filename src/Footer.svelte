@@ -113,7 +113,8 @@
 		.rating-logo { width: 230px; }
 	}
 
-    @media (max-width: 800px){
+    @media (max-width: 1100px){
+        main { height: 100%; }
         .icon-container { margin: 50px 0; }
         img { width: 100px; }
         .rating-logo { width: 200px; }
@@ -128,8 +129,13 @@
         main { height: 100%; }
     }
 
-    @media (max-width: 400px){
+    @media (max-width: 450px){
         img { width: 50px; }
         .rating-logo { width: 100px; }
+    }
+
+    @media (max-width: 280px){
+        img { width: 40px; }
+        .rating-logo { width: 60px; }
     }
 </style>
