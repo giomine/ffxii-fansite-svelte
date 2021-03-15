@@ -72,6 +72,10 @@
         display: block;
     }
 
+    @media (max-width: 735px){
+        main { margin-top: 55px; }
+    }
+
     @media (max-width: 700px){
         main { height: 100%; }
     }
