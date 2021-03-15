@@ -40,9 +40,26 @@
         background: rgba(255, 255, 255, 0.8);
     }
 
-    @media (max-width: 700px){
-        main { height: 660px; }
+
+    @media (max-width: 850px){
+        main { height: 660px;  margin-top: 50px; }
         .prologue { width: 80%; padding: 20px 10px; }
+    }
+
+    @media (width: 823px){
+        main { height: 230vh; margin-top: 0; }
+    }
+
+    @media (width: 812px){
+        main { height: 120vh; margin-top: 0; }
+    }
+
+    @media (width: 768px){
+        main { height: 120vh; margin-top: 0; }
+    }
+
+    @media (width: 736px){
+        main { margin-top: 0; }
     }
 
     @media (max-width: 480px){
@@ -52,5 +69,9 @@
 
     @media (max-width: 400px){
 		main { margin-top: 55px; }
+	}
+
+    @media (max-width: 280px){
+		main { height: 120vh; margin-top: 100px; }
 	}
 </style>

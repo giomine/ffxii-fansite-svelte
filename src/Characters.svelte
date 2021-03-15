@@ -83,4 +83,8 @@
     @media (max-width: 450px){
 		main { margin-top: 55px; }
 	}
+
+    @media (max-width: 280px){
+		main { margin-top: 180px; }
+	}
 </style>
