@@ -6,7 +6,7 @@
 <main>
     <div class="header">
         <img class="square-logo" src="https://cdn.sqexeu.com/headerbar/images/SE_Logo_White.svg" alt="square enix logo">
-        <nav class="nav-container">
+        <div class="nav-container">
             <div class="navs">
                 <Link exact to="/jp">
                     <h2>ホーム</h2>
@@ -21,12 +21,12 @@
                     <h2>ゲーム</h2>
                 </Link>
             </div>
-        </nav>
+        </div>
 		<div class="login-container">
-			<nav class="flags">
+			<div class="flags">
 				<Link to="/">🇬🇧</Link>
 				<Link exact to="/jp">🇯🇵</Link>
-			</nav>
+			</div>
 			<div class="triangle">	
 			</div>
 			<div class="login" class:loginJP={loginBarJP}>
@@ -47,7 +47,8 @@
     }
 
     h2{
-        color: white;
+		color: white;
+		margin: 0;
     }
     .header{
 		width: 100vw;

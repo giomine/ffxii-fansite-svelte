@@ -12,8 +12,8 @@
 
     window.onload = () => { 
         const app = document.getElementById('root')
-        const container = document.createElement('div')
-        container.setAttribute('class', 'container')
+        const containers = document.createElement('div')
+        containers.setAttribute('class', 'containers')
 
         fetch('https://www.moogleapi.com/api/v1/games/8e801e49-4f82-4899-39a4-08d6b0a627a3')
         .then(res => res.json())
@@ -21,8 +21,8 @@
             data.forEach((ff12) => {
             console.log(ff12.picture + " Name: " + ff12.title + ", Platform: " + ff12.platform + ", Release Date: " + ff12.releaseDate + ", Description: " + ff12.description)  
 
-            const card = document.createElement('div')
-            card.setAttribute('class', 'card gameCard')
+            const cards = document.createElement('div')
+            cards.setAttribute('class', 'cards gameCard')
 
             const image = document.createElement('img');
             image.src = ff12.picture
@@ -33,6 +33,7 @@
 
             const title = document.createElement('h2');
             title.textContent = ff12.title;
+            title.setAttribute('class', 'charH2')
 
             const platform = document.createElement('p');
             platform.textContent = ff12.platform;
@@ -44,15 +45,15 @@
             description.textContent = ff12.description;
             description.setAttribute('class', 'gameDescription')
 
-            container.appendChild(card)
-            card.appendChild(imageContainer)
+            containers.appendChild(cards)
+            cards.appendChild(imageContainer)
             imageContainer.appendChild(image)
-            card.appendChild(title)
-            card.appendChild(platform)
-            card.appendChild(releaseDate)
-            card.appendChild(description)
+            cards.appendChild(title)
+            cards.appendChild(platform)
+            cards.appendChild(releaseDate)
+            cards.appendChild(description)
         })
-            app.appendChild(container)
+            app.appendChild(containers)
         })
             .catch(error => {
                 console.log('There has been a problem with your fetch operation: ', error)

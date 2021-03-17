@@ -28,14 +28,20 @@
 
   }
 
-  .card h1{
+  h2{
+    font-size: 1.3rem !important;
+  }
+
+  .cards h1{
     height: 122px;
     width: 100%;
     font-size: 2rem;
   }
 
-  h2 {
-    font-size: 1.2rem;
+  .charH2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2% 0;
   }
   
   .charImages {
@@ -52,14 +58,14 @@
     overflow-wrap: break-word;
   }
   
-  .container {
+  .containers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
   }
   
-  .card {
+  .cards {
     margin: 1rem;
     background: white;
     box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
@@ -73,7 +79,7 @@
     max-height: 500px;
   }
   
-  .card:hover {
+  .cards:hover {
     box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
     transform: translate3D(0, -2px, 0);
   }
@@ -84,26 +90,26 @@
   }
   
   @media screen and (min-width: 600px) {
-    .card {
+    .cards {
       flex: 1 1 calc(50% - 2rem);
     }
   }
   
   @media screen and (min-width: 900px) {
-    .card {
+    .cards {
       flex: 1 1 calc(33% - 2rem);
     }
   }
   
-  .card:nth-child(2n) h1 {
+  .cards:nth-child(2n) h1 {
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   }
   
-  .card:nth-child(4n) h1 {
+  .cards:nth-child(4n) h1 {
     background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
   }
   
-  .card:nth-child(5n) h1 {
+  .cards:nth-child(5n) h1 {
     background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
   }
 
@@ -141,7 +147,7 @@
 
   @media (max-width: 350px) {
     h1 { font-size: 30px; margin-bottom: 10px; }
-    .card { height: 290px; margin: 0.5rem; }
+    .cards { height: 290px; margin: 0.5rem; }
     .imageContainer { height: 200px; }
     .gameCard { height: 72vh; }
   }

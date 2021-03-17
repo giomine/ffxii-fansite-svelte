@@ -12,8 +12,8 @@
 
     window.onload = () => { 
         const app = document.getElementById('root')
-        const container = document.createElement('div')
-        container.setAttribute('class', 'container')
+        const containers = document.createElement('div')
+        containers.setAttribute('class', 'containers')
 
         fetch('https://www.moogleapi.com/api/v1/characters/search?origin=xii')
         .then(res => res.json())
@@ -21,8 +21,8 @@
             data.forEach((char) => {
             console.log(char.pictures[0].url + " Name: " + char.name + ", Origin: " + char.origin + ", About: " + char.description)  
 
-            const card = document.createElement('div')
-            card.setAttribute('class', 'card')
+            const cards = document.createElement('div')
+            cards.setAttribute('class', 'cards')
 
             const image = document.createElement('img');
             image.src = char.pictures[0].url
@@ -33,6 +33,7 @@
 
             const name = document.createElement('h2');
             name.textContent = char.name;
+            name.setAttribute('class', 'charH2')
 
             const origin = document.createElement('p');
             origin.textContent = char.origin;
@@ -42,14 +43,14 @@
             description.textContent = char.description;
             description.setAttribute('class', 'cardText');
 
-            container.appendChild(card)
-            card.appendChild(imageContainer)
+            containers.appendChild(cards)
+            cards.appendChild(imageContainer)
             imageContainer.appendChild(image)
-            card.appendChild(name)
-            card.appendChild(origin)
-            card.appendChild(description)
+            cards.appendChild(name)
+            cards.appendChild(origin)
+            cards.appendChild(description)
         })
-            app.appendChild(container)
+            app.appendChild(containers)
         })
             .catch(error => {
                 console.log('There has been a problem with your fetch operation: ', error)
