@@ -53,16 +53,16 @@
 					<a href="https://www.jp.square-enix.com" target="_blank" rel="noopener noreferrer"><p>ログイン</p></a>
 				</div>
 			</div>	
-			<Link exact to="/">
+			<Link exact to="/jp">
 				<h2>ホーム</h2>
 			</Link>
-			<Link exact to="/characters">
+			<Link exact to="/characters/jp">
 				<h2>キャラクター</h2>
 			</Link>
-			<Link exact to="/movie">
+			<Link exact to="/movie/jp">
 				<h2>ムービー</h2>
 			</Link>
-			<Link exact to="/gameinfo">
+			<Link exact to="/gameinfo/jp">
 				<h2>ゲーム</h2>
 			</Link>
 			<div class="flag-small-container">
