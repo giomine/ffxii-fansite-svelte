@@ -54,6 +54,7 @@
 
 		
 		  <ul class="sidenav black" id="mobile-demo">
+			<img class="square-logo" style="margin: 20px 0 5px 0;" src="https://cdn.sqexeu.com/headerbar/images/SE_Logo_White.svg" alt="square enix logo">
 			<div class="login-container-small">
 				<div class="login-small" class:loginJP={loginBarJP}>
 					<a href="{squareEnixJP}" target="_blank" rel="noopener noreferrer"><p>{join}</p></a>

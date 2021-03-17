@@ -40,13 +40,12 @@
 				<a href="https://www.jp.square-enix.com" target="_blank" rel="noopener noreferrer"><p>新規登録</p></a>
 				<a href="https://www.jp.square-enix.com" target="_blank" rel="noopener noreferrer"><p>ログイン</p></a>
 			</div>
-		</div>	
-		<a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only hamburger-icon" on:click={mobileNav}><i class="material-icons white-text right">menu</i></a>
-			
-
-
+		</div>
 		
+		
+		<a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only hamburger-icon" on:click={mobileNav}><i class="material-icons white-text right">menu</i></a>
 		  <ul class="sidenav black" id="mobile-demo">
+			<img class="square-logo" style="margin: 20px 0 5px 0;" src="https://cdn.sqexeu.com/headerbar/images/SE_Logo_White.svg" alt="square enix logo">
 			<div class="login-container-small">
 				<div class="login-small" class:loginJP={loginBarJP}>
 					<a href="https://www.jp.square-enix.com" target="_blank" rel="noopener noreferrer"><p>新規登録</p></a>
