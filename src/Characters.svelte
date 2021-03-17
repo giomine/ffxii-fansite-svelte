@@ -73,23 +73,7 @@
         display: block;
     }
 
-    @media (max-width: 735px){
-        main { margin-top: 55px; }
-    }
-
     @media (max-width: 700px){
         main { height: 100%; }
     }
-
-    @media (max-width: 480px){
-        main { height: 100%; }
-    }
-
-    @media (max-width: 450px){
-		main { margin-top: 55px; }
-	}
-
-    @media (max-width: 280px){
-		main { margin-top: 180px; }
-	}
 </style>

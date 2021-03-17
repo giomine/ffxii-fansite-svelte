@@ -73,12 +73,4 @@
         height: 100%;
         display: block;
     }
-
-    @media (max-width: 735px){
-        main { height: 100%; margin-top: 55px; }
-    }
-
-    @media (max-width: 280px){
-		main { margin-top: 180px; }
-	}
 </style>
